@@ -35,7 +35,7 @@ body {
     border-radius: 8px;
 }
 
-.form{
+#form{
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -57,7 +57,7 @@ body {
     border-radius: 3px;
 }
 
-.input-box label{
+#input-box label{
     font-size: 1.1rem;
     color:  #e8d826;
     font-weight: 500;
@@ -116,19 +116,19 @@ body {
     padding: 0.75rem 0;
 }
 
-.bmi {
+#bmi {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 2.25rem;
 }
 
-.bmi span:last-child {
+#bmi span:last-child {
     font-size: 0.875rem;
     color: #eedf3e;
 }
 
-.description {
+#description {
     width: 15.5rem;
 }
 

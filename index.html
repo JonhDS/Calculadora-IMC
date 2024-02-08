@@ -13,21 +13,21 @@
             <img src="assets/images/Personal.png" alt="Personal Trainer">
         </section>
         <section class="calculator">
-            <form class="form" action="">
+            <form id="form" action="">
                 <h1 class="title">Calculadora - IMC</h1>
-                <div class="input-box">
+                <div id="input-box">
                     <label for="weight">Peso em Kg</label>
                     <div class="input-field">
                         <i class="fa-solid fa-weight-hanging"></i>
-                        <input type="number" class="weight" required>
+                        <input type="number" step="0.01" min="0" max="500" id="weight" required>
                         <span>Kg</span>
                     </div>
                 </div>
-                <div class="input-box">
+                <div id="input-box">
                     <label for="height">Altura em metros</label>
                     <div class="input-field">
                         <i class="fa-solid fa-ruler"></i>
-                        <input type="number" class="height" required>
+                        <input type="number" step="0.01" min="0" max="2.50" id="height" required>
                         <span>m</span>
                     </div>
                 </div>
@@ -37,11 +37,11 @@
             </form>
             <div id="infos" class="hidden">
                 <div class="result">
-                    <div class="bmi">
-                        <span id="value">55</span>
+                    <div id="bmi">
+                        <span id="value"></span>
                         <span>Seu IMC</span>
                     </div>
-                    <div class="description">
+                    <div id="description">
                         <span>55</span>
                     </div>
                 </div>
@@ -54,5 +54,7 @@
             </div>
         </section>
     </main>
+    
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
