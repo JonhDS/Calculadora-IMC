@@ -13,10 +13,14 @@ form.addEventListener('submit', function(event) {
 
     document.getElementById('infos').classList.remove('hidden');
 
+    value.classList.add('attention');
+
     if (bmi < 18.5) {
         description = 'Cuidado! Você está abaixo do peso!'
     } else if (bmi >= 18.5 && bmi <= 25) {
         description = 'Você está no seu peso ideal!'
+        value.classList.remove('attention');
+        value.classList.add('normal');
     } else if (bmi > 25 && bmi <= 30) {
         description = 'Cuidado! Você está com sobrepeso!'
     } else if (bmi > 30 && bmi <= 35) {
